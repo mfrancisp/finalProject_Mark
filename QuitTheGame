@@ -1,0 +1,13 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class QuitTheGame : MonoBehaviour
+{
+
+    public void QuitGame() // Name of code to quit the game
+    {
+        Application.Quit(); // Quits the game
+    }
+
+}
