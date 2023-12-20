@@ -1,0 +1,27 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class T2R : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void OnClickButton() // When I click on this button,
+    {
+
+        SceneManager.LoadScene("Level 1"); // I load the first level of The Game!
+
+    }
+
+}
