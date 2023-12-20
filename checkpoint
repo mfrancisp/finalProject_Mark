@@ -1,0 +1,21 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class Checkpoint : MonoBehaviour // Script for checkpoints/transitions to next level
+{
+
+    private void OnTriggerEnter(Collider other) // When the Player collides with this then run script (OnTrigger so player can phase through instead of hitting its head on it)
+    {
+
+        if (other.gameObject.name == "Player") // If the Player colides with an object with this script attached,
+        {
+
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // Load next scene using scene manager, next scene in the order of whats in the build settings
+       
+        }
+
+    }
+
+}
